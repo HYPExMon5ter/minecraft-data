@@ -2668,7 +2668,7 @@
     "id": 99,
     "displayName": "Brown Mushroom (block)",
     "name": "brown_mushroom_block",
-    "hardness": 0,
+    "hardness": 0.2,
     "stackSize": 64,
     "diggable": true,
     "boundingBox": "block",
@@ -2743,7 +2743,7 @@
     "id": 100,
     "displayName": "Red Mushroom (block)",
     "name": "red_mushroom_block",
-    "hardness": 0,
+    "hardness": 0.2,
     "stackSize": 64,
     "diggable": true,
     "boundingBox": "block",
@@ -5649,7 +5649,7 @@
     "id": 203,
     "displayName": "Purpur Stairs",
     "name": "purpur_stairs",
-    "hardness": 2,
+    "hardness": 1.5,
     "stackSize": 64,
     "diggable": true,
     "boundingBox": "block",
@@ -5773,7 +5773,7 @@
     "id": 208,
     "displayName": "Grass Path",
     "name": "grass_path",
-    "hardness": 0.6,
+    "hardness": 0.65,
     "stackSize": 64,
     "diggable": true,
     "boundingBox": "block",
@@ -5787,9 +5787,9 @@
     "id": 209,
     "displayName": "End Gateway",
     "name": "end_gateway",
-    "hardness": 0,
+    "hardness": null,
     "stackSize": 0,
-    "diggable": true,
+    "diggable": false,
     "boundingBox": "empty",
     "drops": [
       {
@@ -5805,9 +5805,9 @@
     "id": 210,
     "displayName": "Repeating Command Block",
     "name": "repeating_command_block",
-    "hardness": 0,
+    "hardness": null,
     "stackSize": 64,
-    "diggable": true,
+    "diggable": false,
     "boundingBox": "block",
     "drops": [
       {
@@ -5823,9 +5823,9 @@
     "id": 211,
     "displayName": "Chain Command Block",
     "name": "chain_command_block",
-    "hardness": 0,
+    "hardness": null,
     "stackSize": 64,
-    "diggable": true,
+    "diggable": false,
     "boundingBox": "block",
     "drops": [
       {
@@ -5855,9 +5855,9 @@
     "id": 255,
     "displayName": "Structure Block",
     "name": "structure_block",
-    "hardness": 0,
+    "hardness": null,
     "stackSize": 0,
-    "diggable": true,
+    "diggable": false,
     "boundingBox": "block",
     "variations": [
       {
