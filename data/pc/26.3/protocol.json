@@ -7272,6 +7272,10 @@
                   "type": "ExplosionParticleEntry"
                 }
               ]
+            },
+            {
+              "name": "playSound",
+              "type": "bool"
             }
           ]
         ],
@@ -9335,17 +9339,12 @@
                           "type": "anonymousNbt"
                         },
                         {
-                          "name": "flags",
-                          "type": [
-                            "bitflags",
-                            {
-                              "type": "u8",
-                              "flags": [
-                                "friendly_fire",
-                                "see_friendly_invisible"
-                              ]
-                            }
-                          ]
+                          "name": "prefix",
+                          "type": "anonymousNbt"
+                        },
+                        {
+                          "name": "suffix",
+                          "type": "anonymousNbt"
                         },
                         {
                           "name": "nameTagVisibility",
@@ -9379,15 +9378,23 @@
                         },
                         {
                           "name": "formatting",
-                          "type": "varint"
+                          "type": [
+                            "option",
+                            "varint"
+                          ]
                         },
                         {
-                          "name": "prefix",
-                          "type": "anonymousNbt"
-                        },
-                        {
-                          "name": "suffix",
-                          "type": "anonymousNbt"
+                          "name": "flags",
+                          "type": [
+                            "bitflags",
+                            {
+                              "type": "u8",
+                              "flags": [
+                                "friendly_fire",
+                                "see_friendly_invisible"
+                              ]
+                            }
+                          ]
                         }
                       ]
                     ],
@@ -9399,17 +9406,12 @@
                           "type": "anonymousNbt"
                         },
                         {
-                          "name": "flags",
-                          "type": [
-                            "bitflags",
-                            {
-                              "type": "u8",
-                              "flags": [
-                                "friendly_fire",
-                                "see_friendly_invisible"
-                              ]
-                            }
-                          ]
+                          "name": "prefix",
+                          "type": "anonymousNbt"
+                        },
+                        {
+                          "name": "suffix",
+                          "type": "anonymousNbt"
                         },
                         {
                           "name": "nameTagVisibility",
@@ -9443,15 +9445,23 @@
                         },
                         {
                           "name": "formatting",
-                          "type": "varint"
+                          "type": [
+                            "option",
+                            "varint"
+                          ]
                         },
                         {
-                          "name": "prefix",
-                          "type": "anonymousNbt"
-                        },
-                        {
-                          "name": "suffix",
-                          "type": "anonymousNbt"
+                          "name": "flags",
+                          "type": [
+                            "bitflags",
+                            {
+                              "type": "u8",
+                              "flags": [
+                                "friendly_fire",
+                                "see_friendly_invisible"
+                              ]
+                            }
+                          ]
                         }
                       ]
                     ]

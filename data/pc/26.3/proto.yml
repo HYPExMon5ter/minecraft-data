@@ -2359,6 +2359,7 @@
       explosionParticle: Particle
       sound: ItemSoundHolder
       blockParticles: ExplosionParticleEntry[]varint
+      playSound: bool
    packet_add_transient_block:
       location: position
       type: varint
@@ -2941,10 +2942,8 @@
       _: mode ?
          if add or change:
             name: anonymousNbt
-            flags: ["bitflags", {
-               "type": "u8",
-               "flags": ["friendly_fire", "see_friendly_invisible"]
-            }]
+            prefix: anonymousNbt
+            suffix: anonymousNbt
             nameTagVisibility: varint =>
                - always
                - never
@@ -2955,9 +2954,11 @@
                - never
                - push_other_teams
                - push_own_team
-            formatting: varint
-            prefix: anonymousNbt
-            suffix: anonymousNbt
+            formatting?: varint
+            flags: ["bitflags", { 
+               "type": "u8", 
+               "flags": ["friendly_fire", "see_friendly_invisible"] 
+            }]
          default: void
       players: mode ?
          if add or join or leave: string[]varint
