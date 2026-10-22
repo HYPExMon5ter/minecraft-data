@@ -6904,10 +6904,7 @@
             },
             {
               "name": "contents",
-              "type": [
-                "option",
-                "Slot"
-              ]
+              "type": "Slot"
             }
           ]
         ],

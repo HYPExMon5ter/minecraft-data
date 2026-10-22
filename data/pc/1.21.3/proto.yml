@@ -2264,7 +2264,7 @@
    # MC: ClientboundSetPlayerInventoryPacket
    packet_set_player_inventory:
       slotId: varint
-      contents?: Slot
+      contents: Slot
    # MC: ClientboundSetPlayerTeamPacket
    packet_teams:
       team: string
