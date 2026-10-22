@@ -2584,7 +2584,9 @@
    # MC: ClientboundOpenSignEditorPacket
    packet_open_sign_entity:
       location: position
-      isFrontText: bool
+      slot: varint =>
+      - back
+      - front
    # MC: ClientboundPingPacket
    packet_ping:
       id: i32
@@ -3848,11 +3850,13 @@
    # MC: ServerboundSignUpdatePacket
    packet_update_sign:
       location: position
-      isFrontText: bool
       text1: string
       text2: string
       text3: string
       text4: string
+      slot: varint =>
+      - back
+      - front
    # MC: ServerboundSpectatorActionPacket
    packet_spectator_action:
       entityId?: varint
