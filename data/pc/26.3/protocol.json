@@ -4518,7 +4518,7 @@
                             "13": "minecraft:block_predicate",
                             "14": "minecraft:item_stack",
                             "15": "minecraft:item_predicate",
-                            "16": "minecraft:color",
+                            "16": "minecraft:team_color",
                             "17": "minecraft:hex_color",
                             "18": "minecraft:component",
                             "19": "minecraft:style",
@@ -4557,8 +4557,13 @@
                             "52": "minecraft:loot_table",
                             "53": "minecraft:loot_predicate",
                             "54": "minecraft:loot_modifier",
-                            "55": "minecraft:dialog",
-                            "56": "minecraft:uuid"
+                            "55": "minecraft:context_float_provider",
+                            "56": "minecraft:context_int_provider",
+                            "57": "minecraft:slot_source",
+                            "58": "minecraft:dialog",
+                            "59": "minecraft:feature",
+                            "60": "minecraft:swing_animation",
+                            "61": "minecraft:uuid"
                           }
                         }
                       ]
@@ -4827,7 +4832,7 @@
                             "minecraft:block_predicate": "void",
                             "minecraft:item_stack": "void",
                             "minecraft:item_predicate": "void",
-                            "minecraft:color": "void",
+                            "minecraft:team_color": "void",
                             "minecraft:hex_color": "void",
                             "minecraft:component": "void",
                             "minecraft:message": "void",

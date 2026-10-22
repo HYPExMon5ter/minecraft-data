@@ -1382,7 +1382,7 @@
             - minecraft:block_predicate
             - minecraft:item_stack
             - minecraft:item_predicate
-            - minecraft:color
+            - minecraft:team_color
             - minecraft:hex_color # 1.21.6
             - minecraft:component
             - minecraft:style
@@ -1566,7 +1566,7 @@
                if minecraft:block_predicate: void
                if minecraft:item_stack: void
                if minecraft:item_predicate: void
-               if minecraft:color: void
+               if minecraft:team_color: void
                if minecraft:hex_color: void
                if minecraft:component: void
                if minecraft:message: void

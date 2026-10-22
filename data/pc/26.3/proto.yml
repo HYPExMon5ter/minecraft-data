@@ -1429,7 +1429,7 @@
             - minecraft:block_predicate
             - minecraft:item_stack
             - minecraft:item_predicate
-            - minecraft:color
+            - minecraft:team_color
             - minecraft:hex_color # 1.21.6
             - minecraft:component
             - minecraft:style
@@ -1468,7 +1468,12 @@
             - minecraft:loot_table # 1.20.5
             - minecraft:loot_predicate # 1.20.5
             - minecraft:loot_modifier # 1.20.5
+            - minecraft:context_float_provider # 26.3
+            - minecraft:context_int_provider # 26.3
+            - minecraft:slot_source # 26.3
             - minecraft:dialog # 1.21.6
+            - minecraft:feature # 26.3
+            - minecraft:swing_animation # 26.3
             - minecraft:uuid
             properties: parser ?
                if brigadier:bool: void
@@ -1613,7 +1618,7 @@
                if minecraft:block_predicate: void
                if minecraft:item_stack: void
                if minecraft:item_predicate: void
-               if minecraft:color: void
+               if minecraft:team_color: void
                if minecraft:hex_color: void
                if minecraft:component: void
                if minecraft:message: void
