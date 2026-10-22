@@ -14701,15 +14701,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
+    "material": "wood",
     "defaultState": 8307,
     "resistance": 3
   },
@@ -14746,15 +14738,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
+    "material": "wood",
     "defaultState": 8313,
     "resistance": 3
   },
@@ -14791,15 +14775,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
+    "material": "wood",
     "defaultState": 8319,
     "resistance": 3
   },
@@ -14836,15 +14812,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
+    "material": "wood",
     "defaultState": 8325,
     "resistance": 3
   },
@@ -14881,15 +14849,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
+    "material": "wood",
     "defaultState": 8331,
     "resistance": 3
   },
@@ -14926,15 +14886,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
+    "material": "wood",
     "defaultState": 8337,
     "resistance": 3
   },
@@ -20439,7 +20391,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
     "defaultState": 9653,
     "resistance": 3
   },

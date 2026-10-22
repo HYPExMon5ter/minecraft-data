@@ -13862,14 +13862,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "473": true,
-      "487": true,
-      "491": true,
-      "495": true,
-      "502": true
-    },
+    "material": "wood",
     "defaultState": 7261,
     "resistance": 3
   },
@@ -13906,14 +13899,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "473": true,
-      "487": true,
-      "491": true,
-      "495": true,
-      "502": true
-    },
+    "material": "wood",
     "defaultState": 7267,
     "resistance": 3
   },
@@ -13950,14 +13936,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "473": true,
-      "487": true,
-      "491": true,
-      "495": true,
-      "502": true
-    },
+    "material": "wood",
     "defaultState": 7273,
     "resistance": 3
   },
@@ -13994,14 +13973,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "473": true,
-      "487": true,
-      "491": true,
-      "495": true,
-      "502": true
-    },
+    "material": "wood",
     "defaultState": 7279,
     "resistance": 3
   },
@@ -14038,14 +14010,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "473": true,
-      "487": true,
-      "491": true,
-      "495": true,
-      "502": true
-    },
+    "material": "wood",
     "defaultState": 7285,
     "resistance": 3
   },
@@ -14082,14 +14047,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "473": true,
-      "487": true,
-      "491": true,
-      "495": true,
-      "502": true
-    },
+    "material": "wood",
     "defaultState": 7291,
     "resistance": 3
   },
@@ -19395,7 +19353,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
     "defaultState": 8589,
     "resistance": 3
   },
