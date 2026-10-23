@@ -24239,15 +24239,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
+    "material": "wood",
     "defaultState": 15068,
     "resistance": 0.5
   },
@@ -24274,15 +24266,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "rock",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
+    "material": "wood",
     "defaultState": 15070,
     "resistance": 0.5
   },
