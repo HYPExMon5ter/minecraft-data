@@ -205,16 +205,14 @@
       if 42:
          item: slot
       if 43:
-         positionType: string
-         entityId: positionType ?
-            if minecraft:entity: varint
-            default: void
-         entityEyeHeight: positionType ?
-            if minecraft:entity: varint
-            default: void
-         destination: positionType ?
-            if minecraft:block: position
-            if minecraft:entity: varint
+         positionType: varint =>
+         - block
+         - entity
+         position: positionType ?
+            if block: position
+            if entity:
+               entityId: varint
+               entityEyeHeight: f32
          ticks: varint
       if 96:
          delayInTicksBeforeShown: varint

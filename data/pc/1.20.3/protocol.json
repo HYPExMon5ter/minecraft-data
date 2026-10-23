@@ -413,43 +413,38 @@
             [
               {
                 "name": "positionType",
-                "type": "string"
-              },
-              {
-                "name": "entityId",
                 "type": [
-                  "switch",
+                  "mapper",
                   {
-                    "compareTo": "positionType",
-                    "fields": {
-                      "minecraft:entity": "varint"
-                    },
-                    "default": "void"
+                    "type": "varint",
+                    "mappings": {
+                      "0": "block",
+                      "1": "entity"
+                    }
                   }
                 ]
               },
               {
-                "name": "entityEyeHeight",
+                "name": "position",
                 "type": [
                   "switch",
                   {
                     "compareTo": "positionType",
                     "fields": {
-                      "minecraft:entity": "varint"
-                    },
-                    "default": "void"
-                  }
-                ]
-              },
-              {
-                "name": "destination",
-                "type": [
-                  "switch",
-                  {
-                    "compareTo": "positionType",
-                    "fields": {
-                      "minecraft:block": "position",
-                      "minecraft:entity": "varint"
+                      "block": "position",
+                      "entity": [
+                        "container",
+                        [
+                          {
+                            "name": "entityId",
+                            "type": "varint"
+                          },
+                          {
+                            "name": "entityEyeHeight",
+                            "type": "f32"
+                          }
+                        ]
+                      ]
                     }
                   }
                 ]
