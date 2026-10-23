@@ -9,6 +9,27 @@ const v = new Ajv({ verbose: true })
 
 const Validator = require('protodef-validator')
 
+// Ajv 6 checks uniqueItems by deep-comparing every pair of items, which made the schemas of the
+// large arrays (items, blocks, sounds) most of the suite's time. A top-level uniqueItems is checked
+// here instead, by each item's JSON with sorted keys, and Ajv validates the rest of the schema.
+const withoutTopUniqueItems = new Map()
+const canonical = value => JSON.stringify(value, (key, item) => item && typeof item === 'object' && !Array.isArray(item)
+  ? Object.fromEntries(Object.keys(item).sort().map(name => [name, item[name]]))
+  : item)
+function validateSchema (schema, instance) {
+  if (schema.uniqueItems && Array.isArray(instance)) {
+    const seen = new Map()
+    instance.forEach((item, index) => {
+      const key = canonical(item)
+      assert.ok(!seen.has(key), `items ${seen.get(key)} and ${index} are identical, but the schema requires unique items`)
+      seen.set(key, index)
+    })
+    if (!withoutTopUniqueItems.has(schema)) withoutTopUniqueItems.set(schema, { ...schema, uniqueItems: false })
+    schema = withoutTopUniqueItems.get(schema)
+  }
+  assert.ok(v.validate(schema, instance), JSON.stringify(v.errors, null, 2))
+}
+
 Error.stackTraceLimit = 0
 
 // The suite used to take ~3min, almost all of it in protodef-validator < 1.5.0 (quadratic
@@ -108,9 +129,7 @@ require('./version_iterator')(function (p, versionString) {
             validator.validateProtocol(instance)
             checkProtocolSwitches(instance, versionString)
           } else {
-            const schema = require('../../../schemas/' + dataName + '_schema.json')
-            const valid = v.validate(schema, instance)
-            assert.ok(valid, JSON.stringify(v.errors, null, 2))
+            validateSchema(require('../../../schemas/' + dataName + '_schema.json'), instance)
           }
         })
       }
@@ -127,9 +146,7 @@ minecraftTypes.forEach(function (type) {
     commonData.forEach(function (dataName) {
       it(dataName + '.json is valid', function () {
         const instance = require('../../../data/' + type + '/common/' + dataName + '.json')
-        const schema = require('../../../schemas/' + dataName + '_schema.json')
-        const valid = v.validate(schema, instance)
-        assert.ok(valid, JSON.stringify(v.errors, null, 2))
+        validateSchema(require('../../../schemas/' + dataName + '_schema.json'), instance)
       })
     })
   })
