@@ -28787,7 +28787,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "plant",
+    "material": "plant;mineable/hoe",
     "defaultState": 18622
   },
   {
