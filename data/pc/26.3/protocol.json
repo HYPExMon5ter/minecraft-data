@@ -1695,11 +1695,14 @@
                     {
                       "name": "filteredMessages",
                       "type": [
-                        "array",
-                        {
-                          "count": 4,
-                          "type": "anonymousNbt"
-                        }
+                        "option",
+                        [
+                          "array",
+                          {
+                            "count": 4,
+                            "type": "anonymousNbt"
+                          }
+                        ]
                       ]
                     },
                     {
@@ -1728,11 +1731,14 @@
                     {
                       "name": "filteredMessages",
                       "type": [
-                        "array",
-                        {
-                          "count": 4,
-                          "type": "anonymousNbt"
-                        }
+                        "option",
+                        [
+                          "array",
+                          {
+                            "count": 4,
+                            "type": "anonymousNbt"
+                          }
+                        ]
                       ]
                     },
                     {

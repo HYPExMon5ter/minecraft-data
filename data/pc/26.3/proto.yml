@@ -523,12 +523,13 @@
          if shulker/color: DyeColor
          if sign_text_front:
             messages: ["array", { "count": 4, "type": "anonymousNbt" }]
-            filteredMessages: ["array", { "count": 4, "type": "anonymousNbt" }]
+            # Ref: SignText.STREAM_CODEC, ByteBufCodecs.optional(fixedSizeList(4))
+            filteredMessages?: ["array", { "count": 4, "type": "anonymousNbt" }]
             color: varint
             hasGlowingText: bool
          if sign_text_back:
             messages: ["array", { "count": 4, "type": "anonymousNbt" }]
-            filteredMessages: ["array", { "count": 4, "type": "anonymousNbt" }]
+            filteredMessages?: ["array", { "count": 4, "type": "anonymousNbt" }]
             color: varint
             hasGlowingText: bool
          if waxed: void
